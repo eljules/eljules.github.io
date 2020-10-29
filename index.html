@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>School Project</title>
+
+    <style>
+        html,
+        body {
+            padding: 0;
+            margin: 0;
+            height: auto;
+            min-height: 100%;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .content-window {
+            width: 100%;
+            height: auto;
+            padding-top: 10%;
+            padding-bottom: 10%;
+        }
+
+        .content-text {
+            display: block;
+            font-size: 18px;
+            color: #b9bec5;
+            padding: 5% !important;
+        }
+
+        .quote {
+            width: 75% !important;
+            margin-left: 12.5% !important;
+            font-style: italic;
+        }
+
+        .top {
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+
+        .middle {
+            grid-row-start: 4;
+            grid-row-end: 7;
+        }
+
+        .bottom {
+            grid-row-start: 9;
+        }
+
+        .right {
+            grid-column-start: 5;
+            grid-column-end: end;
+        }
+
+        .full {
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+
+        .left {
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+
+        .center {
+            grid-column-start: 2;
+            grid-column-end: 8;
+        }
+
+        .dark-bg {
+            background-color: #293c43d3 !important;
+            box-shadow: 3px 2px 15px 5px #34353577;
+        }
+
+        .light-bg {
+            background-color: #4c5465de !important;
+            box-shadow: 3px 2px 15px 5px #1c1e22a4;
+        }
+
+        .content-text-container {
+            display: grid;
+            height: 100%;
+            grid-template-rows: repeat(8, minmax(1fr, auto));
+            grid-template-columns: repeat(8, 1fr);
+        }
+
+        .content-text-container,
+        .content-text-container * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .main-title {
+            background-color: #212c32bd;
+        }
+        .sources{
+            padding:2%;
+            font-size: 12px;
+        }
+        .sources li{
+            margin: 1.5%;
+        }
+        h3{
+            padding:2% !important;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="parallax-window content-window" data-parallax="scroll" data-image-src="/img/stairs2.jpg">
+        <div class="content-text-container">
+            <div class="content-text middle center main-title">
+                <h1>The Mental Health Crisis</h1>
+                <sub>By Eric Julander</sub>
+                
+                <h3>Word Count: 1267</h3>
+                <h3>Sources</h3>
+                <ul class="sources">
+                    <li>
+                        Magoon, C., Rosenberg, L. and Lieberman, J., 2020. Preparing For The Mental Health
+                        Repercussions Of The COVID-19 Pandemic. [online] Psychiatric Times. Available at:
+                        &lt;https: //www.psychiatrictimes.com/view/preparing-mental-health-repercussions-covid19-
+                        pandemic&gt;
+                        [Accessed 13 October 2020]. </li>
+                    <li>
+                        Chidambaram, P., Muñana, C., Hamel, L., Garfield, R., Cox, C., Orgera, K., Kamal, R. and
+                        Panchal, N., 2020. The Implications Of COVID-19 For Mental Health And Substance Use. [online]
+                        KFF. Available at:
+                        &lt;https:
+                        //www.kff.org/coronavirus-covid-19/issue-brief/the-implications-of-covid19-for-mental-health-and-substance-use
+                        /&gt;
+                        [Accessed 13 October 2020].
+                    </li>
+                    <li>
+                        Pfefferbaum, B. and North, C., 2020. Mental Health And The Covid-19 Pandemic | NEJM. [online]
+                        New England Journal of Medicine. Available at:
+                        &lt;https: //www.nejm.org/doi/full/10.1056/NEJMp2008017&gt; [Accessed 13 October 2020].
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="parallax-window content-window" data-parallax="scroll" data-image-src="/img/depression1.jpg">
+        <div class="content-text-container">
+            <p class="content-text middle right dark-bg">Over the past several years our country has been experiencing a
+                rise in the mental health crisis. This has led to an increase of alcohol consumption, substance abuse,
+                and suicide. It was observed that before the pandemic, “Deaths from suicide, drug overdose, and
+                alcohol-related liver disease, eclipsed the combined mortality of all infectious diseases combined in
+                the United States.” (Magoon et al., 2020) There are many reasons for this overall decline in mental
+                health, but the most predominant reason is a general lack of education and skills which are needed to
+                deal with anxiety and depression.</p>
+        </div>
+    </div>
+    <div class="parallax-window content-window" data-parallax="scroll" data-image-src="/img/apartment.jpg">
+        <div class="content-text-container">
+            <div class="content-text center middle dark-bg">
+                <p>Because the skills needed to overcome depression and anxiety rely on a fair amount access to
+                    resources
+                    and education, the lower class—particularly minorities—tend to be impacted by this the most. One
+                    study
+                    noted that,</p><br>
+                <p class="quote">
+                    Of course, mental health, like physical health, does not exist in a vacuum. When people’s basic
+                    needs
+                    are met, they are healthier in mind and body… Being poor is bad for your health. This certainly
+                    holds
+                    true in New York City, where black and Latinx people are disproportionately vulnerable to the
+                    coronavirus. (Magoon et al., 2020)
+
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="parallax-window content-window" data-parallax="scroll" data-image-src="/img/elderly5.jpg">
+        <div class="content-text-container">
+            <p class="content-text middle left light-bg">Aside from the lower class, anxiety and depression also have
+                been taking a toll on the older generation of Americans. These generations tend to experience more
+                anxiety and depression due to a lack of human connection, failing health, and growing separation from
+                their loved ones. This generally goes unnoticed and untreated in our society. As a result, suicide is
+                relatively high in this demographic of Americans. A study on the implications of the current pandemic
+                stated that, “In 2018, older adults accounted for nearly one out of five suicide deaths (9,102 out of
+                48,344) in the U.S.” (Panchal et al., 2020) </p>
+
+            <p class="content-text bottom right light-bg">The amount of attention and action in regard to the mental
+                health of these demographics was very limited before the rise of COVID-19. As a result, the issue has
+                grown out of proportion and has begun to affect far more than just the aforementioned groups. </p>
+
+        </div>
+    </div>
+    <div class="parallax-window content-window" data-parallax="scroll" data-image-src="/img/lockdown1.jpg">
+        <div class="content-text-container">
+            <p class="content-text middle left light-bg">The rise of the COVID-19 pandemic, and policy trying to curb
+                the extent of its effect, has proved to be the catalyst of anxiety and depression for many Americans.
+                Government mandated lockdowns have caused many people to lose their jobs and have caused people in the
+                older generation to be more isolated amongst other things. Varying information in regard to protecting
+                the vulnerable population has also proved to be a great source of stress and anxiety for many people.
+                All of this ironically increased the influence of the pandemic to greatly affect those who have not
+                caught the virus. However, since most efforts have been made to stop the virus and treat those who have
+                contracted it, little to no effort has been made to help the many who are vulnerable to anxiety and
+                depression. As a result of attention not being brought to the issue of increased anxiety and depression
+                in the population, people generally did not have the knowledge or skills to properly cope with it during
+                the pandemic. One study group found that, “Many adults are also reporting specific negative impacts on
+                their mental health and wellbeing, such as difficulty sleeping (36%) or eating (32%), increases in
+                alcohol consumption or substance use (12%), and worsening chronic conditions (12%), due to worry and
+                stress over the coronavirus.” (Panchal et al., 2020)</p>
+        </div>
+    </div>
+    <div class="parallax-window content-window" data-parallax="scroll" data-image-src="/img/socailmedia1.jpg">
+        <div class="content-text-container">
+            <p class="content-text middle left dark-bg">One of the main contributors to this problem an increase of
+                social media use while people are socially isolating. When looking at impact of social media during this
+                crisis, one study indicated that “Because of widespread dissemination of unverified or downright fake
+                reports that confuse the public…millions of individuals are relying heavily on social media while
+                sheltering in place. There is growing concern that this trend may result in increased risk of depressed
+                mood, anxiety, PTSD, and other mental health problems” (Magoon et al., 2020) Because people are isolated
+                from others, they rely on social media to know the general condition of society. There are many stories
+                and articles about the pandemic, amongst other things, which can spread a dark and twisted depiction of
+                reality. People who consistently come across these skewed depictions tend to experience more anxiety and
+                depression the more often they come into contact with them. </p>
+        </div>
+    </div>
+    <div class="parallax-window content-window" data-parallax="scroll" data-image-src="/img/elderly4.jpg">
+        <div class="content-text-container">
+            <p class="content-text middle right dark-bg">Because the older generation is more vulnerable to the virus,
+                current social distancing practices and policies tend to leave them more isolated. It was observed that
+                a lot of current government lock down policies, “may limit [the older generation’s] interactions with
+                caregivers and loved ones, which could lead to increased feelings of loneliness and anxiety, in addition
+                to general feelings of uncertainty and fear due to the pandemic.” (Panchal et al., 2020) This increased
+                effort to protect their effort can also prove to be detrimental to their health when taken to the
+                extreme. Isolation along with fear of the virus turns into a perfect storm of stress and anxiety. This
+                turns into deep depression because these people are isolated from resources to help them cope during
+                these troubled times. This may even lead to suicide in some cases where these people go too long without
+                being treated or followed up on. </p>
+        </div>
+    </div>
+    <div class="parallax-window content-window" data-parallax="scroll" data-image-src="/img/presentation1.jpg">
+        <div class="content-text-container">
+            <p class="content-text top left light-bg">
+                “Public education will be an essential tool for conveying accurate information about the role of
+                lifestyle for enhancing emotional and mental wellness.” (Magoon et al., 2020)
+            </p>
+            <p class="content-text middle right light-bg">
+                The greatest way we can help this issue is by educating people on lifestyle changes and strategies which
+                help counteract the negative effects of anxiety and depression. Learning to overcoming depression and
+                anxiety is not an easy task, but it is certainly possible when we empower the people with proper
+                knowledge on how to do it. This can be best done when programs are organized to help educate the people.
+                It was noted that “Carried out at a community level and coordinated by volunteers, such programs will
+                achieve maximum buy-in and can probably be planned and implemented at little or no cost.” (Magoon et
+                al., 2020) By mobilizing in communities to best educate each other on how to battle the mental
+                repercussions of COVID-19, we can help many people be healthier and happier. It could even save lives.
+            </p>
+        </div>
+    </div>
+    <div class="parallax-window content-window" data-parallax="scroll" data-image-src="/img/device1.jpg">
+        <div class="content-text-container">
+            <p class="content-text top left dark-bg">
+                “Since media reports can be emotionally disturbing, contact with pandemic-related news should be
+                monitored and limited.” (Pfefferbaum & North, 2020) </p>
+            <p class="content-text middle right dark-bg">
+                Social media also plays a key role in reducing the effect of anxiety and depression. The groups which
+                are assembled to educate the community should teach people how to effectively monitor and limit their
+                social media use. By separating from these platforms, people tend to find greater ability to cope with
+                the pandemic. A study claimed that, “Social media interventions have been proven effective for changing
+                perceptions and behaviors on a large scale, and may become an important part of a coordinated national
+                strategy for psychoeducation and enhancing resilience in the face of COVID-19.” (Magoon et al., 2020)
+                Though people may not realize it, social media can have a more negative impact on their health and
+                happiness. This is why it is essential that we incorporate education on the effects of social media
+                during community trainings.
+            </p>
+        </div>
+    </div>
+    <div class="parallax-window content-window" data-parallax="scroll" data-image-src="/img/stairs1.jpg">
+        <div class="content-text-container">
+            <p class="content-text middle center dark-bg">Though COVID-19 has exacerbated the mental health crisis in
+                America. It is a problem that should be taken as seriously as the pandemic itself. If people continue to
+                ignore this issue, it is projected that there will be up to an additional 75,000 deaths from suicide and
+                addiction which stems from untreated anxiety and depression. (Magoon et al., 2020) This issue will be
+                best treated as we form programs on the community level to educate people on how to properly treat
+                themselves and others who are experiencing anxiety and depression. </p>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="/parallax.js-1.5.0/parallax.js"></script>
+
+</body>
+
+</html>
